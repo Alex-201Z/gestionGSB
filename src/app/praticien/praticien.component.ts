@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import{Praticien} from '../models/praticien';
 @Component({
   selector: 'app-praticien',
   standalone: true,
-  imports: [],
+  imports: [ ],
   templateUrl: './praticien.component.html',
-  styleUrl: './praticien.component.scss'
+  styleUrls: ['./praticien.component.scss']
 })
 export class PraticienComponent {
-
+  @Input() praticien!: Praticien;
+}
+onModificationStatut() {
+  this.praticien.onMoficationStatut()
 }
