@@ -1,1 +1,3 @@
-<app-praticien></app-praticien>
+@for (particien of praticiens; track particien.nom){
+  <app-praticien [praticien]="praticien"></app-praticien>
+}

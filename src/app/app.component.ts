@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {PraticienComponent} from './praticien/praticien.component';
+import{Praticien} from './models/praticien';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -20,3 +21,4 @@ export class AppComponent implements OnInit {
       new Praticien('https://www.w3schools.com/howto/img_avatar3.png', 'Johnson', 'Emily', '30 rue des Hôpitaux', '75003', 'Paris', 'Déjà visité'),
     ];
   }
+}
