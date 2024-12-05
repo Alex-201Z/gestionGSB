@@ -1,4 +1,5 @@
-<p>praticien works!</p>
-<img [src]="imageUrl">
-<h2>{{ prenom }} {{ nom }} {{ adresse }} {{ cp }} {{ ville }} {{ statut }}</h2>
-<button (click)="onModificationStatut()"> TEST </button>
+<img [src]="praticien.imageUrl">
+<h2>{{ praticien.prenom|titlecase }} {{ praticien.nom|uppercase }} <br>{{ praticien.adresse }} <br>{{ praticien.cp }}<br> {{ praticien.ville }} </h2>
+<button (click)="onModificationStatut()"> {{ praticien.statut }} </button>
+<br>
+<br>

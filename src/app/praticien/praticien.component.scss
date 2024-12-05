@@ -1,0 +1,21 @@
+button {
+  background-color: aliceblue;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border: none;
+  box-shadow: #2f7a6f 3px 3px 7px;
+  margin-right: 20px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:active {
+    transform: translate(1px, 1px);
+    box-shadow: #316b9c 0 0 5px;
+  }
+}
+img {
+  max-width: 100px;
+  border-radius: 40px;
+}
+
