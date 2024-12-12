@@ -1,1 +1,4 @@
-<p>praticien-list works!</p>
+
+@for (particien of praticiens; track particien.nom){
+  <app-praticien [praticien]="particien"></app-praticien>
+}

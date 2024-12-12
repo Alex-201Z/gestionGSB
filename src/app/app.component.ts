@@ -2,12 +2,12 @@ import {Component, OnInit} from '@angular/core';
 import {RouterOutlet } from '@angular/router';
 import {HeaderComponent} from './header/header.component';
 import {PraticienComponent} from './praticien/praticien.component';
-import{Praticien} from './models/praticien';
+import{PraticienListComponent} from './praticien-list/praticien-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PraticienComponent,HeaderComponent],
+  imports: [PraticienListComponent,HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 
